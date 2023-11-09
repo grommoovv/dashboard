@@ -1,6 +1,6 @@
-import Footer from '@/layout/footer/footer'
-import Navbar from '@/layout/navbar/navbar'
-import Sidebar from '@/layout/sidebar/sidebar'
+import { Footer } from '@/layout/footer'
+import { Navbar } from '@/layout/navbar'
+import { Sidebar } from '@/layout/sidebar'
 import styles from './layout.module.css'
 import { FC, PropsWithChildren } from 'react'
 
