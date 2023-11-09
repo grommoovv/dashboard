@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { MenuLink } from '@/ui/menuLink'
 import styles from './sidebar.module.css'
-import { menuItems } from '@/lib/constants'
+import { menuItems } from '@/lib/mock'
 import { MdLogout } from 'react-icons/md'
 
 // import { auth, signOut } from '@/app/auth'
