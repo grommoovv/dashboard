@@ -1,0 +1,42 @@
+.transactions {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: var(--textSoft);
+}
+
+.table {
+  width: 100%;
+}
+
+.table_head,
+.table_body_row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  padding: 10px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.userImage {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.status {
+	display: inline;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: white;
+}
