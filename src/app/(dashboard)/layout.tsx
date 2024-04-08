@@ -1,19 +1,17 @@
-import { Footer } from '@/layout/footer'
-import { Navbar } from '@/layout/navbar'
+import { Header } from '@/layout/navbar'
 import { Sidebar } from '@/layout/sidebar'
-import styles from './layout.module.css'
+import cls from './layout.module.css'
 import { FC, PropsWithChildren } from 'react'
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className={styles.layout}>
-      <div className={styles.sidebar}>
+    <div className={cls.layout}>
+      <div className={cls.sidebar}>
         <Sidebar />
       </div>
-      <div className={styles.content}>
-        <Navbar />
+      <div className={cls.content}>
+        <Header />
         {children}
-        <Footer />
       </div>
     </div>
   )

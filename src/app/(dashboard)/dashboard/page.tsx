@@ -1,24 +1,20 @@
-import { Rightbar } from '@/layout/rightbar'
-import { Card } from '@/ui/card/card'
-import { Chart } from '@/ui/chart/chart'
+import { Card } from '@/shared/ui/card/card'
+import { Chart } from '@/shared/ui/chart/chart'
 import { Transactions } from '@/widgets/transactions'
-import styles from './page.module.css'
-import { cardsInfo } from '@/lib/mock'
+import cls from './page.module.css'
+import { cardsInfo } from '@/shared/mock'
 
 const Page = () => {
   return (
-    <div className={styles.page}>
-      <div className={styles.main}>
-        <div className={styles.cards}>
+    <div className={cls.page}>
+      <div className={cls.main}>
+        <div className={cls.cards}>
           {cardsInfo.map((item) => (
             <Card item={item} key={item.id} />
           ))}
         </div>
         <Transactions />
         <Chart />
-      </div>
-      <div className={styles.side}>
-        <Rightbar />
       </div>
     </div>
   )

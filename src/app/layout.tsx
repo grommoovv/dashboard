@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from 'react'
 import { Inter } from 'next/font/google'
-import '@/app/globals.css'
+import '@/shared/styles/globals.css'
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'] })
 

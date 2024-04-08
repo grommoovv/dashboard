@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { MenuLink } from '@/ui/menuLink'
-import styles from './sidebar.module.css'
-import { menuItems } from '@/lib/mock'
+import { MenuLink } from '@/shared/ui/menuLink'
+import cls from './sidebar.module.css'
+import { menuItems } from '@/shared/mock'
 import { MdLogout } from 'react-icons/md'
 
 // import { auth, signOut } from '@/app/auth'
@@ -9,27 +9,11 @@ import { MdLogout } from 'react-icons/md'
 const Sidebar = async () => {
   // const { user } = await auth()
   return (
-    <div className={styles.sidebar}>
-      <div className={styles.user}>
-        <Image
-          className={styles.userImage}
-          // src={user.img || '/noavatar.png'}
-          src={'/noavatar.png'}
-          alt=''
-          width='50'
-          height='50'
-        />
-        <div className={styles.userDetail}>
-          {/* <span className={styles.username}>{user.username}</span> */}
-          <span className={styles.username}>Username</span>
-          <span className={styles.userTitle}>Administrator</span>
-        </div>
-      </div>
-
-      <ul className={styles.list}>
+    <div className={cls.sidebar}>
+      <ul className={cls.list}>
         {menuItems.map((cat) => (
           <li key={cat.title}>
-            <span className={styles.cat}>{cat.title}</span>
+            <span className={cls.cat}>{cat.title}</span>
             {cat.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}
@@ -43,7 +27,7 @@ const Sidebar = async () => {
           // await signOut()
         }}
       >
-        <button className={styles.logout}>
+        <button className={cls.logout}>
           <MdLogout />
           Logout
         </button>

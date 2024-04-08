@@ -1,6 +1,5 @@
-// TODO
 const Page = () => {
-  return <div>Homepage</div>
+  return <button>Dashboard</button>
 }
 
 export default Page

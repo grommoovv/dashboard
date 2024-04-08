@@ -1,20 +1,20 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import styles from './navbar.module.css'
+import cls from './header.module.css'
 import { MdNotifications, MdOutlineChat, MdPublic, MdSearch } from 'react-icons/md'
 
-const Navbar = () => {
+const Header = () => {
   const pathname = usePathname()
 
   return (
-    <div className={styles.navbar}>
-      <div className={styles.title}>{pathname.split('/').pop()}</div>
-      <div className={styles.menu}>
-        <div className={styles.search}>
+    <div className={cls.header}>
+      <div className={cls.title}>{pathname.split('/').pop()}</div>
+      <div className={cls.menu}>
+        <div className={cls.search}>
           <MdSearch />
-          <input type='text' placeholder='Search...' className={styles.input} />
+          <input type='text' placeholder='Search...' className={cls.input} />
         </div>
-        <div className={styles.icons}>
+        <div className={cls.icons}>
           <MdOutlineChat size={20} />
           <MdNotifications size={20} />
           <MdPublic size={20} />
@@ -24,4 +24,4 @@ const Navbar = () => {
   )
 }
 
-export { Navbar }
+export { Header }
