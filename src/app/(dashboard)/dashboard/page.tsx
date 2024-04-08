@@ -1,7 +1,7 @@
 import { Card } from '@/shared/ui/card/card'
 import { Chart } from '@/shared/ui/chart/chart'
 import { Transactions } from '@/widgets/transactions'
-import cls from './page.module.css'
+import cls from './page.module.scss'
 import { cardsInfo } from '@/shared/mock'
 
 const Page = () => {

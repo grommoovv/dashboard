@@ -1,6 +1,6 @@
 import { updateProduct } from '@/lib/actions'
 import { fetchProduct } from '@/lib/data'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import Image from 'next/image'
 import { FC } from 'react'
 

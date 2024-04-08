@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './transactions.module.css'
+import styles from './transactions.module.scss'
 
 const transactions = [
   {

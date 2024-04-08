@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import { Searchbar } from '@/widgets/searchbar/searchbar'
 
 interface PageProps {

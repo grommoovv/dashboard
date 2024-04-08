@@ -1,6 +1,6 @@
 import { updateUser } from '@/lib/actions'
 import { fetchUser } from '@/lib/data'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import Image from 'next/image'
 import { FC } from 'react'
 

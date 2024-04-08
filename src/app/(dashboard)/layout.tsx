@@ -1,6 +1,6 @@
 import { Header } from '@/layout/navbar'
 import { Sidebar } from '@/layout/sidebar'
-import cls from './layout.module.css'
+import cls from './layout.module.scss'
 import { FC, PropsWithChildren } from 'react'
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {

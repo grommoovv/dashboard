@@ -1,6 +1,6 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import cls from './header.module.css'
+import cls from './header.module.scss'
 import { MdNotifications, MdOutlineChat, MdPublic, MdSearch } from 'react-icons/md'
 
 const Header = () => {

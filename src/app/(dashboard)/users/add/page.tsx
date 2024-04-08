@@ -1,5 +1,5 @@
 import { addUser } from '@/lib/actions'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 
 const Page = () => {
   return (

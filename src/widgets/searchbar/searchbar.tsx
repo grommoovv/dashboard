@@ -1,7 +1,7 @@
 'use client'
 
 import { MdSearch } from 'react-icons/md'
-import styles from './searchbar.module.css'
+import styles from './searchbar.module.scss'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useDebouncedCallback } from 'use-debounce'
 import { FC } from 'react'

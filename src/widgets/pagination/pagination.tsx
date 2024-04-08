@@ -1,7 +1,7 @@
 'use client'
 
 import { FC } from 'react'
-import styles from './pagination.module.css'
+import styles from './pagination.module.scss'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 
 interface PaginationProps {

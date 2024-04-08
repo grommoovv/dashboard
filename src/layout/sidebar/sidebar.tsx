@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { MenuLink } from '@/shared/ui/menuLink'
-import cls from './sidebar.module.css'
+import cls from './sidebar.module.scss'
 import { menuItems } from '@/shared/mock'
 import { MdLogout } from 'react-icons/md'
 

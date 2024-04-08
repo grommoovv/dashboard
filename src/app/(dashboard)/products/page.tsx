@@ -5,7 +5,7 @@ import { Pagination } from '@/widgets/pagination/pagination'
 import { fetchProducts } from '@/lib/data'
 import { deleteProduct } from '@/lib/actions'
 
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import { FC } from 'react'
 
 interface PageProps {
